@@ -10,7 +10,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: MainScreen(),
+      routes: {
+        '/' : (context) => new MainScreen(),
+        '/details' : (context) => new Details()
+      },
     );
   }
 }
